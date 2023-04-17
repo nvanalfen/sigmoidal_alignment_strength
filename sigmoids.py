@@ -6,18 +6,18 @@ from collections import OrderedDict
 DEFAULT_PDICT = OrderedDict()
 # Fill default values and set the necessary keys
 # Redhsift values
-DEFAULT_PDICT["redshift_x0"] = 3
-DEFAULT_PDICT["redshift_k"] = -1
-DEFAULT_PDICT["redshift_y_low"] = -1
-DEFAULT_PDICT["redshift_y_high"] = 1
+DEFAULT_PDICT["redshift_x0"] = 4.
+DEFAULT_PDICT["redshift_k"] = -0.4
+DEFAULT_PDICT["redshift_y_low"] = 0.6
+DEFAULT_PDICT["redshift_y_high"] = 1.
 # Color values
-DEFAULT_PDICT["color_x0"] = 0
-DEFAULT_PDICT["color_k"] = 1
-DEFAULT_PDICT["color_y_low"] = 0
+DEFAULT_PDICT["color_x0"] = 1.5
+DEFAULT_PDICT["color_k"] = 0.7
+DEFAULT_PDICT["color_y_low"] = 0.
 # Log stellar mass values
-DEFAULT_PDICT["logsm_x0"] = 12
-DEFAULT_PDICT["logsm_k"] = 1
-DEFAULT_PDICT["logsm_y_low"] = 0
+DEFAULT_PDICT["logsm_x0"] = 6.
+DEFAULT_PDICT["logsm_k"] = 0.5
+DEFAULT_PDICT["logsm_y_low"] = 0.
 
 def sigmoid(x, x0=0, k=1, y_low=-1, y_high=1):
     return y_low + (y_high - y_low) / (1 + np.exp(-k * (x - x0)))
